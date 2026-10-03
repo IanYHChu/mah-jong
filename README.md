@@ -25,18 +25,20 @@ q:過 w:胡 e:吃67                                 v:河底  東風圈 你:東 
 
 ## 安裝
 
-需要支援 mods（plugin hooks 模組）的 Claude Code，作者在 2.1.288 上開發與測試。在 Claude Code 裡輸入：
+需要 Claude Code 2.1.288 以上（Claude Mods 於 2.1.287 推出，2.1.288 修正了 mod 按鈕與輸入框上方顯示的問題）。用 `claude --version` 確認，`claude update` 更新。
+
+mah-jong 收錄在 [claude-mods-games](https://github.com/IanYHChu/claude-mods-games) marketplace，加入一次之後，其他 mods 遊戲也從這裡安裝。在 Claude Code 裡輸入：
 
 ```
-/plugin marketplace add IanYHChu/mah-jong
-/plugin install mah-jong@mah-jong
+/plugin marketplace add IanYHChu/claude-mods-games
+/plugin install mah-jong@claude-mods-games
 ```
 
 或在終端機：
 
 ```sh
-claude plugin marketplace add IanYHChu/mah-jong
-claude plugin install mah-jong@mah-jong
+claude plugin marketplace add IanYHChu/claude-mods-games
+claude plugin install mah-jong@claude-mods-games
 ```
 
 裝好後開一個新的 session，牌桌就會出現在輸入框上方。
