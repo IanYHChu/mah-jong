@@ -1,0 +1,18 @@
+{
+  "name": "mah-jong",
+  "owner": {
+    "name": "Ian Chu"
+  },
+  "description": "台灣 16 張麻將，一個在 Claude Code 裡玩的 plugin。",
+  "plugins": [
+    {
+      "name": "mah-jong",
+      "source": "./",
+      "description": "台灣 16 張麻將，在 Claude Code 輸入框上方跟三家電腦對打。",
+      "version": "0.1.0",
+      "author": {
+        "name": "Ian Chu"
+      }
+    }
+  ]
+}

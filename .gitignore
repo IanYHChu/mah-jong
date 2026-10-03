@@ -1,0 +1,5 @@
+# local Claude Code settings
+.claude/
+# engine types, laid beside the plugin when Claude Code loads it
+.claude-plugin/types/
+node_modules/

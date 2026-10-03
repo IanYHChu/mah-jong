@@ -1,0 +1,18 @@
+{
+  "name": "mah-jong",
+  "version": "0.1.0",
+  "description": "Taiwanese 16-tile mahjong against three bots, played in a four-row band above the prompt.",
+  "author": {
+    "name": "Ian Chu"
+  },
+  "homepage": "https://github.com/IanYHChu/mah-jong",
+  "repository": "https://github.com/IanYHChu/mah-jong",
+  "license": "MIT",
+  "keywords": [
+    "mahjong",
+    "game",
+    "taiwanese",
+    "麻將"
+  ],
+  "types": "./types/index.d.ts"
+}
