@@ -1,5 +1,8 @@
 # mah-jong：等 Claude 的時候，摸兩圈
 
+[![ci](https://github.com/IanYHChu/mah-jong/actions/workflows/ci.yml/badge.svg)](https://github.com/IanYHChu/mah-jong/actions/workflows/ci.yml)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/IanYHChu/mah-jong/badge)](https://scorecard.dev/viewer/?uri=github.com/IanYHChu/mah-jong)
+
 Claude 在想、在跑測試、在改十幾個檔案的時候，你在做什麼？盯著轉圈圈？
 
 Claude Code 開放了 mods 之後，輸入框上方多了一塊 plugin 可以自由揮灑的空間。`mah-jong` 就把這塊空間變成一張四列高的牌桌，讓你在等模型的空檔跟三家電腦打**台灣 16 張麻將**。Claude 回來了就繼續工作，牌局停在原地等你；吃、碰、槓、胡、補花、輪莊、算台、算錢，該有的都有，而且完全不佔用你跟 Claude 的對話。
@@ -85,6 +88,12 @@ claude plugin install mah-jong@claude-mods-games
 | 24 | 天胡 |
 
 同一副牌有多種拆法時，取台數最高的拆法。宣告聽牌（聽牌、天聽、地聽）尚未支援。
+
+## 安全性
+
+Claude Code 的 mod 沒有 sandbox，所以這裡列出 mah-jong 做的全部事情：用 Mods API 畫牌桌、保存牌局、計時，以及註冊 `/mj` 和 `/mj-deal` 指令。它不讀寫檔案、不連網路、不執行程式，也不看你跟 Claude 的對話或工具呼叫。程式只 import Mods API 和自己的檔案，可以用 `claude plugin validate .` 自己確認它掛了哪些 hook、呼叫了哪些 API。
+
+[claude-mods-games](https://github.com/IanYHChu/claude-mods-games) marketplace 會檢查每個鎖定版本，結果公布在 [CAPABILITIES.md](https://github.com/IanYHChu/claude-mods-games/blob/main/CAPABILITIES.md)。
 
 ## 開發
 
