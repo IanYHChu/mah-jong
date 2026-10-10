@@ -28,7 +28,7 @@ q:過 w:胡 e:吃67                                 v:河底  東風圈 你:東 
 
 ## 安裝
 
-需要 Claude Code 2.1.288 以上（Claude Mods 於 2.1.287 推出，2.1.288 修正了 mod 按鈕與輸入框上方顯示的問題）。用 `claude --version` 確認，`claude update` 更新。
+需要 Claude Code 2.1.290 以上。Claude Mods 於 2.1.287 推出，之後幾版修正了牌桌用得到的問題：升級後第一個 session 不載入已安裝的 mod、牌桌右側被 `[-]` 蓋住、長段中文讓畫面重繪卡頓。用 `claude --version` 確認，`claude update` 更新。stable 更新管道（以及 Homebrew 的 `claude-code` cask）目前還停在 2.1.287，在 `/config` 改用 latest 管道，等 stable 跟上再換回來。
 
 mah-jong 收錄在 [claude-mods-games](https://github.com/IanYHChu/claude-mods-games) marketplace，加入一次之後，其他 mods 遊戲也從這裡安裝。在 Claude Code 裡輸入：
 
